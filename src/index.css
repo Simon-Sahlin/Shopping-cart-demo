@@ -17,6 +17,13 @@
   align-items: center;
 }
 
+#itemsWrapper{
+  display: grid;
+  width: 73%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
 nav{
   background-color: navy;
   height: 64px;
