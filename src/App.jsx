@@ -252,7 +252,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar page="index" />
       <div id="storeWrapper">
         <h1>Hello World</h1>
         <div id="itemsWrapper">

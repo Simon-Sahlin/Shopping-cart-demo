@@ -44,7 +44,7 @@ nav > ul{
   list-style: none;
 }
 
-nav > ul > li{
+nav > ul > li > a{
   font-size: 1.2em;
   font-weight: 500;
   cursor: pointer;
@@ -52,6 +52,11 @@ nav > ul > li{
   justify-content: center;
   align-items: center;
   gap: 5px;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
 }
 
 nav svg{
