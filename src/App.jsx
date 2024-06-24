@@ -257,7 +257,7 @@ function App() {
         <h1>Hello World</h1>
         <div id="itemsWrapper">
           {items.map(item =>
-            <Itemcard item={item} addCB={addItemToCart}/>
+            <Itemcard key={item.id} item={item} addCB={addItemToCart}/>
           )}
         </div>
       </div>
