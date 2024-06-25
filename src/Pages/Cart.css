@@ -1,0 +1,14 @@
+#cartWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cartItem{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr;
+    place-items: center start;
+    gap: 5px;
+}
+.cartItem > img{
+    width: 100%;
+}
