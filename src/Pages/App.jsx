@@ -1,13 +1,13 @@
-import Navbar from "../Components/Navbar.jsx"
-import Itemcard from "../Components/Itemcard.jsx"
-
 import { Outlet } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
 
+  const [cartItems, setCartItems] = useState([])
+
   return (
     <>
-      <Outlet/>
+      <Outlet context={[cartItems, setCartItems]}/>
     </>
   )
 }

@@ -1,5 +1,6 @@
 import Navbar from "../Components/Navbar.jsx"
 import Itemcard from "../Components/Itemcard.jsx"
+import { useOutletContext } from "react-router-dom"
 
 function Store() {
 
@@ -246,8 +247,11 @@ function Store() {
     }
   ]
   
+  const [cartItems, setCartItems] = useOutletContext();
+
   function addItemToCart(toAdd){
     console.log("Added x" + toAdd.count + " : " + toAdd.title + " to cart")
+    setCartItems([...cartItems, toAdd])
   }
 
   return (
