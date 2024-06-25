@@ -1,5 +1,5 @@
-import Navbar from "./Navbar.jsx"
-import Itemcard from "./Itemcard.jsx"
+import Navbar from "../Components/Navbar.jsx"
+import Itemcard from "../Components/Itemcard.jsx"
 
 import { Outlet } from "react-router-dom";
 

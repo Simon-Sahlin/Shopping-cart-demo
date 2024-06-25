@@ -1,7 +1,7 @@
 import React from 'react'
-import App from './App.jsx'
-import Store from './Store.jsx'
-import Cart from './Cart.jsx'
+import App from './Pages/App.jsx'
+import Store from './Pages/Store.jsx'
+import Cart from './Pages/Cart.jsx'
 
 
 const routes = [
