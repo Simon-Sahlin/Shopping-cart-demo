@@ -1,9 +1,17 @@
 import { Outlet } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
 
-  const [cartItems, setCartItems] = useState(items)
+  const [cartItems, setCartItems] = useState([])
+
+  // useEffect(()=>{
+  //   let newItems = [
+  //     {...sampleItems[4], count:1},
+  //     {...sampleItems[7], count:5},
+  //   ]
+  //   setCartItems(newItems);
+  // },[])
 
   return (
     <>
@@ -15,7 +23,7 @@ function App() {
 export default App
 
 
-const items = [
+const sampleItems = [
   {
     "id": 1,
     "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
